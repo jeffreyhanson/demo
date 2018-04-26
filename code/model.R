@@ -2,4 +2,4 @@
 data <- read.csv("../data/formatted.csv")
 
 # run some model
-model <- lm(value ~ Species, data = data)
+model <- glm(value ~ Species, data = data, family = "poisson")
