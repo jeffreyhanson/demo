@@ -9,4 +9,4 @@ out_data <- raw_data %>%
             mutate(trait = tolower(traitx))
 
 # export
-write.table(out_data, "../data/fixed.csv")
+write.table(out_data, "../data/formatted.csv")
